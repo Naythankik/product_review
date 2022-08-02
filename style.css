@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+  padding: 129px 0;
+}
+
+div.container {
+  display: flex;
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  background: none;
+}
+div.container > div.image-container {
+  width: 60%;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+div.container > div.details-container {
+  border-radius: 0 10px 10px 0;
+  background: hsl(0, 0%, 100%);
+  width: 50%;
+  padding: 15px 25px;
+}
+div.details-container > * {
+  margin: 20px 0;
+}
+
+.details-container > p:first-child {
+  color: grey;
+  background: none;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.details-container > h2 {
+  font-family: "Fraunces", serif;
+  color: black;
+  background: none;
+  font-weight: 500;
+  font-size: 38px;
+}
+.details-container > p:nth-child(3) {
+  color: gray;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.details-container > div.price {
+  background: none;
+  padding: 10px 0;
+  display: flex;
+  gap: 30px;
+}
+div.price > h1 {
+  color: hsl(158, 36%, 37%);
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+}
+div.price > span {
+  color: grey;
+  background: none;
+  text-align: center;
+  margin-top: 12px;
+  text-decoration: line-through;
+}
+div.button {
+  background: none;
+  width: 100%;
+}
+
+div.button > button {
+  padding: 15px 10px;
+  width: 100%;
+  border-radius: 10px;
+  outline: 0;
+  border: 0;
+  background: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  font-size: 14px;
+  font-weight: 700;
+}
+button > img {
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background: hsl(30, 38%, 92%);
+    padding: 20px 0;
+    width: auto;
+  }
+
+  div.container {
+    display: grid;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
+    background: white;
+  }
+  div.container > div.image-container {
+    width: auto;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+    border-radius: 10px 10px 0 0;
+  }
+
+  div.container > div.details-container {
+    background: hsl(0, 0%, 100%);
+    width: auto;
+    padding: 0 20px;
+    border-radius: 0 0 10px 10px;
+  }
+}
