@@ -97,7 +97,7 @@ button > img {
   body {
     background: hsl(30, 38%, 92%);
     padding: 20px 0;
-    width: auto;
+    width: 375px;
   }
 
   div.container {
