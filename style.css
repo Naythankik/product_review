@@ -86,40 +86,59 @@ div.button > button {
   border: 0;
   background: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700;
 }
 button > img {
   margin-right: 10px;
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 500px) and (max-width: 950px) {
+  div.container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 500px) {
   body {
     background: hsl(30, 38%, 92%);
     padding: 20px 0;
-    width: 375px;
+    width: 100%;
   }
 
   div.container {
     display: grid;
-    margin: 0 auto;
     width: 90%;
-    border-radius: 10px;
-    background: white;
   }
   div.container > div.image-container {
-    width: auto;
+    width: 100%;
     background-image: url("./images/image-product-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 120px 0;
+    height: 300px;
     border-radius: 10px 10px 0 0;
   }
 
   div.container > div.details-container {
     background: hsl(0, 0%, 100%);
     width: auto;
-    padding: 0 20px;
+    padding: 20px;
     border-radius: 0 0 10px 10px;
+  }
+  .details-container > h2 {
+    font-size: 40px;
+  }
+  .details-container > p:first-child {
+    font-size: 1.2em;
+  }
+  .details-container > p:nth-child(3) {
+    font-size: 1.3em;
+  }
+  div.price > h1 {
+    font-size: 34pt;
+  }
+  div.price > span {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  div.button > button {
+    font-size: 20px;
   }
 }
